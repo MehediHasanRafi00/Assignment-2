@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Market</title>
+
+    <link rel="stylesheet" href="tailwind.init.css" />
+
+    <!-- tailwindcss cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome cdn -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-inter">
+    <header class="max-w-6xl mx-auto px-4">
+      <nav class="flex justify-between items-center mt-8">
+        <figure><img class="" src="./assets/logo.png" alt="" /></figure>
+
+        <div class="flex gap-12">
+          <ul class="flex gap-12 invisible md:visible">
+            <li><a class="font-bold text-[#252432]" href=" ">Home</a></li>
+            <li><a class="text-[#8987A1]" href=" ">Shop</a></li>
+            <li><a class="text-[#8987A1]" href=" ">About us </a></li>
+          </ul>
+          <div>
+            <span><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
