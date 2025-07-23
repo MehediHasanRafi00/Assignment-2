@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flower Market</title>
 
-    <link rel="stylesheet" href="tailwind.init.css" />
-
     <!-- tailwindcss cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -19,11 +17,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="tailwind.init.css" />
   </head>
   <body class="font-inter">
-    <header class="max-w-6xl mx-auto px-4">
-      <nav class="flex justify-between items-center mt-8">
-        <figure><img class="" src="./assets/logo.png" alt="" /></figure>
+    <header class="max-w-6xl mx-auto ">
+      <!-- nav section  -->
+      <nav class="flex justify-between items-center mt-8 px-4">
+        <figure class="max-w-36"><img class="w-full" src="./assets/logo (2).png" alt="" /></figure>
 
         <div class="flex gap-12">
           <ul class="flex gap-12 invisible md:visible">
@@ -36,6 +37,24 @@
           </div>
         </div>
       </nav>
+      <!-- banner section  -->
+      <div class="flex gap-7 flex-col-reverse lg:flex-row items-center mt-120px ms-4 ">
+        <div>
+          <h2 class="font-noto-serif text-6xl font-bold leading-20">
+            ALWAYS
+            <span class="text-[#E95A08]"
+              >FRESH <br />
+              FLOWERS</span
+            >
+          </h2>
+          <p class="text-[#00000080] text-2xl max-w-xl mt-3">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+        <figure><img src="./assets/hero-flower.png" alt=""></figure>
+      </div>
     </header>
   </body>
 </html>
