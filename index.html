@@ -28,7 +28,7 @@
           <img class="w-full" src="./assets/logo (2).png" alt="" />
         </figure>
 
-        <div class="flex md:gap-12 ">
+        <div class="flex md:gap-12">
           <ul class="flex gap-12 invisible md:visible">
             <li><a class="font-bold text-[#252432]" href=" ">Home</a></li>
             <li><a class="text-[#8987A1]" href=" ">Shop</a></li>
@@ -206,8 +206,12 @@
         </div>
       </section>
       <!-- Plants Lover Section -->
-      <section class="mt-32  px-4 relative max-w-6xl mx-auto">
-        <figure class="max-w-[286px] invisible lg:visible absolute top-[-120px] left-[350px] "><img class=" " src="./assets/trusted-badge.png" alt=""></figure>
+      <section class="mt-32 px-4 relative max-w-6xl mx-auto">
+        <figure
+          class="max-w-[286px] invisible lg:visible absolute top-[-120px] left-[350px]"
+        >
+          <img class=" " src="./assets/trusted-badge.png" alt="" />
+        </figure>
         <div class="items-center flex flex-col lg:flex-row gap-4">
           <figure><img src="./assets/flower-store.png" alt="" /></figure>
           <div class="max-w-xl">
@@ -234,30 +238,75 @@
           </div>
         </div>
       </section>
-
-
-
-
-       <!-- Join Section -->
-        <section class="mt-32 bg-[url('./assets/news-letter-bg.png')] bg-center bg-no-repeat bg-cover py-48 text-center px-4 ">
-          <h2 class="text-5xl font-bold text-white font-noto-serif mb-6 ">
-             Join the colorful Bunch
-          </h2>
-          <div class="max-w-4xl mx-auto flex justify-center">
-            <input class="px-5 py-3 bg-white w-full focus:outline-[#E95A08] " type="email " placeholder="Write email">
-            <button class=" py-1.5 px-6 sm:py-3 sm:px-12 text-white bg-[#E95A08] border-2 border-[#E95A08]  hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]">Subscribe </button>
+      <!-- Latest Deal Section -->
+      <section class="mt-32 px-4 max-w-6xl mx-auto">
+         <h2 class="text-5xl font-bold font-noto-serif text-center">
+          <span class="text-[#E95A08]">Latest</span>   Deals
+        </h2>
+        <p class="text-[#00000080] text-2xl mt-4 mb-12 max-w-4xl mx-auto text-center" >
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
+        </p>
+        <div
+          class="grid gap-6 grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-2 text-white"
+        >
+          <div
+            class="bg-[url(./assets/deal-bloom.png)] py-20 bg-center flex-col  bg-no-repeat bg-cover rounded-xl flex items-center justify-center"
+          >
+            <h4 class="text-xl font-noto-serif font-bold" >60% Off | Bloom Plant</h4>
+            <a class="underline font-semibold" href="">Shop Now</a>
           </div>
-        </section>
+          <div
+            class="bg-[url(./assets/deal-ana.png)] py-20 bg-center flex-col bg-no-repeat bg-cover flex items-center justify-center rounded-xl md:row-start-2"
+          >
+            <h4 class="font-noto-serif text-xl font-bold">30% Off | Ana Plant</h4>
+            <a class="underline font-semibold" href="">Shop Now</a>
+          </div>
+          <div
+            class="bg-[url('./assets/deal-zabo.png')] py-20 bg-center flex-col bg-no-repeat bg-cover rounded-xl flex items-center justify-center md:col-span-2 md:row-span-2"
+          >
+            <h4 class="font-noto-serif text-xl md:text-4xl font-bold">25% Off | Zabo Plant</h4>
+            <a class=" underline font-semibold md:text-2xl"  href="">Shop Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join Section -->
+      <section
+        class="mt-32 bg-[url('./assets/news-letter-bg.png')] bg-center bg-no-repeat bg-cover py-48 text-center px-4"
+      >
+        <h2 class="text-5xl font-bold text-white font-noto-serif mb-6">
+          Join the colorful Bunch
+        </h2>
+        <div class="max-w-4xl mx-auto flex justify-center">
+          <input
+            class="px-5 py-3 bg-white w-full focus:outline-[#E95A08]"
+            type="email "
+            placeholder="Write email"
+          />
+          <button
+            class="py-1.5 px-6 sm:py-3 sm:px-12 text-white bg-[#E95A08] border-2 border-[#E95A08] hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
+          >
+            Subscribe
+          </button>
+        </div>
+      </section>
     </main>
     <!-- footer section  -->
-    <footer class="my-12 px-4 max-w-6xl mx-auto flex flex-col sm:flex-row sm:gap-10 lg:gap-24 space-y-8">
+    <footer
+      class="my-12 px-4 max-w-6xl mx-auto flex flex-col sm:flex-row sm:gap-10 lg:gap-24 space-y-8"
+    >
       <div>
         <figure class="max-w-36">
           <img class="w-full" src="./assets/logo (2).png" alt="" />
         </figure>
-        <p class="text-[#00000080] text-2xl max-w-96 mt-4">Indulge your senses with the beauty and fragrance of our fresh flower shop.  </p>
+        <p class="text-[#00000080] text-2xl max-w-96 mt-4">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop.
+        </p>
       </div>
-      <div >
+      <div>
         <ul class="space-y-8 text-[#6B7280]">
           <li>Home</li>
           <li>About Us</li>
@@ -269,19 +318,20 @@
       <div>
         <ul class="space-y-8 text-[#6B7280]">
           <li>Features</li>
-          <li>Pricing </li>
+          <li>Pricing</li>
           <li>Privacy Policy</li>
           <li>Terms of Service</li>
           <li>Help Center</li>
         </ul>
       </div>
-      <div class="flex gap-6 ">
-        <a href=""><img src="./assets/icon-linkedin.png" alt=""></a>
-        <a href=""><img class="pt-2" src="./assets/icon-twitter.png" alt=""></a>
-        <a href=""><img src="./assets/icon-facebook.png" alt=""></a>
-        <a href=""><img src="./assets/icon-youtube.png" alt=""></a>
+      <div class="flex gap-6">
+        <a href=""><img src="./assets/icon-linkedin.png" alt="" /></a>
+        <a href=""
+          ><img class="pt-2" src="./assets/icon-twitter.png" alt=""
+        /></a>
+        <a href=""><img src="./assets/icon-facebook.png" alt="" /></a>
+        <a href=""><img src="./assets/icon-youtube.png" alt="" /></a>
       </div>
     </footer>
-    
   </body>
 </html>
