@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flower Market</title>
-    <link rel="shortcut icon" href="./assets/fav-logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/fav-logo.png"
+      type="image/x-icon"
+    />
 
     <!-- tailwindcss cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -26,7 +30,9 @@
       <!-- nav section  -->
       <nav class="flex justify-between items-center mt-8 px-4">
         <figure class="max-w-36">
-          <img class="w-full" src="./assets/logo (2).png" alt="" />
+          <a href="">
+            <img class="w-full" src="./assets/logo (2).png" alt="" />
+          </a>
         </figure>
 
         <div class="flex md:gap-12">
@@ -53,9 +59,8 @@
             >
           </h2>
           <p class="text-[#00000080] text-2xl max-w-xl mt-3">
-            Indulge your senses with the beauty and fragrance of our fresh
-            flower shop. From classic roses to exotic blooms, we offer a wide
-            variety of fresh flowers that are perfect for any occasion.
+            We believe every bloom tells a story. That’s why we handpick fresh
+            flowers every day—so your moments always stay bright and blooming.
           </p>
         </div>
         <figure><img src="./assets/hero-flower.png" alt="" /></figure>
@@ -68,9 +73,9 @@
           <span class="text-[#E95A08]">Our</span> Plants
         </h2>
         <p class="text-[#00000080] text-2xl mt-4 mb-12 max-w-4xl mx-auto">
-          Indulge your senses with the beauty and fragrance of our fresh flower
-          shop. From classic roses to exotic blooms, we offer a wide variety of
-          fresh.
+          From vibrant greens to low-maintenance beauties, explore our curated
+          collection of indoor and outdoor plants. Each plant is chosen with
+          care to add life and freshness to your space.
         </p>
         <!-- cards -->
         <div
@@ -87,7 +92,8 @@
             </h4>
             <p class="text-xl text-[#111111] font-bold mb-7">20 USD</p>
             <button
-              class="font-semibold py-5 px-10 w-full text-white bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
+              onclick="cartAdded()"
+              class="font-semibold py-5 px-10 w-full text-white cursor-pointer bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
             >
               ADD TO CART
             </button>
@@ -103,7 +109,8 @@
             </h4>
             <p class="text-xl text-[#111111] font-bold mb-7">20 USD</p>
             <button
-              class="font-semibold py-5 px-10 w-full text-white bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
+              onclick="cartAdded()"
+              class="font-semibold py-5 px-10 w-full text-white cursor-pointer bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
             >
               ADD TO CART
             </button>
@@ -119,7 +126,8 @@
             </h4>
             <p class="text-xl text-[#111111] font-bold mb-7">20 USD</p>
             <button
-              class="font-semibold py-5 px-10 w-full text-white bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
+              onclick="cartAdded()"
+              class="font-semibold py-5 px-10 w-full text-white cursor-pointer bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
             >
               ADD TO CART
             </button>
@@ -135,7 +143,8 @@
             </h4>
             <p class="text-xl text-[#111111] font-bold mb-7">20 USD</p>
             <button
-              class="font-semibold py-5 px-10 w-full text-white bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
+              onclick="cartAdded()"
+              class="font-semibold py-5 px-10 w-full text-white cursor-pointer bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
             >
               ADD TO CART
             </button>
@@ -151,7 +160,8 @@
             </h4>
             <p class="text-xl text-[#111111] font-bold mb-7">20 USD</p>
             <button
-              class="font-semibold py-5 px-10 w-full text-white bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
+              onclick="cartAdded()"
+              class="font-semibold py-5 px-10 w-full text-white cursor-pointer bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
             >
               ADD TO CART
             </button>
@@ -167,7 +177,8 @@
             </h4>
             <p class="text-xl text-[#111111] font-bold mb-7">20 USD</p>
             <button
-              class="font-semibold py-5 px-10 w-full text-white bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
+              onclick="cartAdded()"
+              class="font-semibold py-5 px-10 w-full text-white cursor-pointer bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
             >
               ADD TO CART
             </button>
@@ -183,7 +194,8 @@
             </h4>
             <p class="text-xl text-[#111111] font-bold mb-7">20 USD</p>
             <button
-              class="font-semibold py-5 px-10 w-full text-white bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
+              onclick="cartAdded()"
+              class="font-semibold py-5 px-10 w-full text-white cursor-pointer bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
             >
               ADD TO CART
             </button>
@@ -199,7 +211,8 @@
             </h4>
             <p class="text-xl text-[#111111] font-bold mb-7">20 USD</p>
             <button
-              class="font-semibold py-5 px-10 w-full text-white bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
+              onclick="cartAdded()"
+              class="font-semibold py-5 px-10 w-full text-white cursor-pointer bg-[#E95A08] border-2 hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
             >
               ADD TO CART
             </button>
@@ -209,7 +222,7 @@
       <!-- Plants Lover Section -->
       <section class="mt-32 px-4 relative max-w-6xl mx-auto">
         <figure
-          class="max-w-[286px] invisible lg:visible absolute top-[-120px] left-[350px]"
+          class="max-w-[286px] invisible lg:visible absolute top-[-120px] left-[350px] badge-spin"
         >
           <img class=" " src="./assets/trusted-badge.png" alt="" />
         </figure>
@@ -221,19 +234,16 @@
             </h2>
             <ul class="list-disc ml-5 text-[#00000080] text-2xl space-y-5">
               <li>
-                Indulge your senses with the beauty and fragrance of our fresh
-                flower shop. From classic roses to exotic blooms, we offer a
-                wide variety of fresh.
+                Brighten up your day with our hand-tied bouquets. Whether it’s
+                love, joy, or sympathy — there’s a flower for every feeling.
               </li>
               <li>
-                Indulge your senses with the beauty and fragrance of our fresh
-                flower shop. From classic roses to exotic blooms, we offer a
-                wide variety of fresh.
+                Nurture your inner gardener. Our plants are perfect for
+                beginners or pros—ready to thrive in any corner of your home.
               </li>
               <li>
-                Indulge your senses with the beauty and fragrance of our fresh
-                flower shop. From classic roses to exotic blooms, we offer a
-                wide variety of fresh.
+                Looking for a green gift? Our flower & plant combos make
+                heartwarming surprises for your loved ones.
               </li>
             </ul>
           </div>
@@ -241,34 +251,42 @@
       </section>
       <!-- Latest Deal Section -->
       <section class="mt-32 px-4 max-w-6xl mx-auto">
-         <h2 class="text-5xl font-bold font-noto-serif text-center">
-          <span class="text-[#E95A08]">Latest</span>   Deals
+        <h2 class="text-5xl font-bold font-noto-serif text-center">
+          <span class="text-[#E95A08]">Latest</span> Deals
         </h2>
-        <p class="text-[#00000080] text-2xl mt-4 mb-12 max-w-4xl mx-auto text-center" >
-          Indulge your senses with the beauty and fragrance of our fresh flower
-          shop. From classic roses to exotic blooms, we offer a wide variety of
-          fresh.
+        <p
+          class="text-[#00000080] text-2xl mt-4 mb-12 max-w-4xl mx-auto text-center"
+        >
+          Don’t miss out! Check our exclusive seasonal offers and discounts on
+          select flowers and plants. Freshness and savings—delivered to your
+          door.
         </p>
         <div
           class="grid gap-6 grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-2 text-white"
         >
           <div
-            class="bg-[#00000066] bg-[url(./assets/deal-bloom.png)] bg-blend-overlay py-20 bg-center flex-col  bg-no-repeat bg-cover rounded-xl flex items-center justify-center"
+            class="bg-[#00000066] bg-[url(./assets/deal-bloom.png)] bg-blend-overlay py-20 bg-center flex-col bg-no-repeat bg-cover rounded-xl flex items-center justify-center"
           >
-            <h4 class="text-xl font-noto-serif font-bold" >60% Off | Bloom Plant</h4>
+            <h4 class="text-xl font-noto-serif font-bold">
+              60% Off | Bloom Plant
+            </h4>
             <a class="underline font-semibold" href="">Shop Now</a>
           </div>
           <div
             class="bg-[#00000066] bg-[url(./assets/deal-ana.png)] bg-blend-overlay py-20 bg-center flex-col bg-no-repeat bg-cover flex items-center justify-center rounded-xl md:row-start-2"
           >
-            <h4 class="font-noto-serif text-xl font-bold">30% Off | Ana Plant</h4>
+            <h4 class="font-noto-serif text-xl font-bold">
+              30% Off | Ana Plant
+            </h4>
             <a class="underline font-semibold" href="">Shop Now</a>
           </div>
           <div
             class="bg-[#00000066] bg-[url('./assets/deal-zabo.png')] bg-blend-overlay py-20 bg-center flex-col bg-no-repeat bg-cover rounded-xl flex items-center justify-center md:col-span-2 md:row-span-2"
           >
-            <h4 class="font-noto-serif text-xl md:text-4xl font-bold">25% Off | Zabo Plant</h4>
-            <a class=" underline font-semibold md:text-2xl"  href="">Shop Now</a>
+            <h4 class="font-noto-serif text-xl md:text-4xl font-bold">
+              25% Off | Zabo Plant
+            </h4>
+            <a class="underline font-semibold md:text-2xl" href="">Shop Now</a>
           </div>
         </div>
       </section>
@@ -287,7 +305,7 @@
             placeholder="Write email"
           />
           <button
-            class="py-1.5 px-6 sm:py-3 sm:px-12 text-white bg-[#E95A08] border-2 border-[#E95A08] hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
+            class="py-1.5 px-6 sm:py-3 sm:px-12 cursor-pointer text-white bg-[#E95A08] border-2 border-[#E95A08] hover:bg-white hover:text-[#E95A08] duration-200 hover:scale-[1.03]"
           >
             Subscribe
           </button>
@@ -300,7 +318,9 @@
     >
       <div>
         <figure class="max-w-36">
-          <img class="w-full" src="./assets/logo (2).png" alt="" />
+          <a href=""
+            ><img class="w-full" src="./assets/logo (2).png" alt=""
+          /></a>
         </figure>
         <p class="text-[#00000080] text-2xl max-w-96 mt-4">
           Indulge your senses with the beauty and fragrance of our fresh flower
@@ -309,30 +329,41 @@
       </div>
       <div>
         <ul class="space-y-8 text-[#6B7280]">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Blog</li>
-          <li>FAQ</li>
-          <li>Contact Us</li>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Contact Us</a></li>
         </ul>
       </div>
       <div>
         <ul class="space-y-8 text-[#6B7280]">
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Privacy Policy</li>
-          <li>Terms of Service</li>
-          <li>Help Center</li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms of Service</a></li>
+          <li><a href="">Help Center</a></li>
         </ul>
       </div>
       <div class="flex gap-6">
-        <a href=""><img src="./assets/icon-linkedin.png" alt="" /></a>
-        <a href=""
+        <a href="https://www.linkedin.com/"
+          ><img src="./assets/icon-linkedin.png" alt=""
+        /></a>
+        <a href="https://x.com/"
           ><img class="pt-2" src="./assets/icon-twitter.png" alt=""
         /></a>
-        <a href=""><img src="./assets/icon-facebook.png" alt="" /></a>
-        <a href=""><img src="./assets/icon-youtube.png" alt="" /></a>
+        <a href="https://www.facebook.com/"
+          ><img src="./assets/icon-facebook.png" alt=""
+        /></a>
+        <a href="https://www.youtube.com/"
+          ><img src="./assets/icon-youtube.png" alt=""
+        /></a>
       </div>
     </footer>
+    <script>
+      function cartAdded() {
+        alert("Flower Added to Cart");
+      }
+    </script>
   </body>
 </html>
