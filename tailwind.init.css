@@ -10,19 +10,21 @@
   .font-inter {
     font-family: "Inter", sans-serif;
   }
+  @keyframes badge-spin {
+    0% {
+      rotate: 0deg;
+    }
+    100% {
+      rotate: 360deg;
+    }
+  }
+
+  .badge-spin {
+    animation: badge-spin 6s linear infinite;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
 }
 
 /* custom css */
-
-@keyframes badge-spin {
-  0% {
-    rotate: 0deg;
-  }
-  100%{
-    rotate: 360deg;
-  }
-}
-
-.badge-spin{
-  animation: badge-spin 6s linear infinite;
-}
